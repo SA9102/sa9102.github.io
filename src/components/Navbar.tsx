@@ -1,4 +1,3 @@
-import { useLocation } from "react-router";
 import "../scss/Navbar.scss";
 import NavbarItem from "./NavbarItem";
 import { HOME, ABOUT_ME, EXP_AND_EDU, PROJECTS } from "../utils/routes";
@@ -6,12 +5,11 @@ import { HOME, ABOUT_ME, EXP_AND_EDU, PROJECTS } from "../utils/routes";
 import Drawer from "react-modern-drawer";
 
 import { useMediaQuery } from "react-responsive";
-import { useState } from "react";
 import useDrawer from "../hooks/useDrawer";
 
 const Navbar = () => {
   const { isOpen, toggleDrawer } = useDrawer();
-  const route = useLocation().pathname;
+  // const route = useLocation().pathname;
 
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",

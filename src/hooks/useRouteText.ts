@@ -2,7 +2,7 @@
 // slash), e.g. the route 'experience-and-education' will return
 // 'EXPERIENCE AND EDUCATION'
 
-const useRouteText = () => {};
+// const useRouteText = () => {};
 
 const getUpperTextFromRoute = (route: string): string => {
   const split = route.split("-");
