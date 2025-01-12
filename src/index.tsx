@@ -13,7 +13,7 @@ import ProjectsPage from "./pages/ProjectsPage.tsx";
 import AboutMePage from "./pages/AboutMePage.tsx";
 
 // Utils
-import { HOME, ABOUT_ME, PROJECTS } from "./utils/routes.ts";
+import { BASE, HOME, ABOUT_ME, PROJECTS } from "./utils/routes.ts";
 
 // Global CSS
 import "./globals.scss";
@@ -25,12 +25,12 @@ createRoot(document.getElementById("root")!).render(
       <main>
         <div className="page">
           <Routes>
-            <Route path={HOME} element={<Home />} />
-            {/* <Route path={`/${BASE}/${HOME}`} element={<Home />} /> */}
-            <Route path={ABOUT_ME} element={<AboutMePage />} />
-            {/* <Route path={`/${BASE}/${ABOUT_ME}`} element={<AboutMePage />} /> */}
-            <Route path={PROJECTS} element={<ProjectsPage />} />
-            {/* <Route path={`/${BASE}/${PROJECTS}`} element={<ProjectsPage />} /> */}
+            {/* <Route path={HOME} element={<Home />} /> */}
+            <Route path={`/${BASE}/${HOME}`} element={<Home />} />
+            {/* <Route path={ABOUT_ME} element={<AboutMePage />} /> */}
+            <Route path={`/${BASE}/${ABOUT_ME}`} element={<AboutMePage />} />
+            {/* <Route path={PROJECTS} element={<ProjectsPage />} /> */}
+            <Route path={`/${BASE}/${PROJECTS}`} element={<ProjectsPage />} />
           </Routes>
         </div>
       </main>
