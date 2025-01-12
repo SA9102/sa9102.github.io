@@ -3,6 +3,7 @@ import removeForwardSlash from "../utils/removeForwardSlash";
 import getTitleFromRoute from "../utils/getUpperTextFromRoute";
 // CSS
 import "../scss/NavbarItem.scss";
+import { BASE } from "../utils/routes";
 
 type props = {
   route: string;
@@ -18,7 +19,7 @@ const NavbarItem = ({ route, onClose }: props) => {
       className={currentRoute === route ? "selected" : "not-selected"}
       onClick={() => {
         onClose();
-        navigate(route);
+        navigate(`/${BASE}/${route}`);
       }}
     >
       {getTitleFromRoute(route)}
