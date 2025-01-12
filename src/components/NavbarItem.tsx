@@ -19,7 +19,7 @@ const NavbarItem = ({ route, onClose }: props) => {
       className={currentRoute === route ? "selected" : "not-selected"}
       onClick={() => {
         onClose();
-        navigate(`/${BASE}/${route}`);
+        navigate(route);
       }}
     >
       {getTitleFromRoute(route)}
