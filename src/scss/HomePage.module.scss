@@ -1,0 +1,71 @@
+@import "./variables";
+
+.homepage {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+  gap: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.skill-icons {
+  // flex: 1;
+  display: flex;
+  justify-content: center;
+  // background-color: red;
+  gap: 1rem;
+  flex-wrap: wrap;
+  // width: 50%;
+}
+
+.skill-icon-and-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-icon {
+  width: 20px;
+  filter: grayscale(1);
+  transition: all 0.5s;
+}
+
+.short-desc {
+  font-size: 1rem;
+  text-align: center;
+}
+
+// .skill-icon:hover {
+//   filter: grayscale(0);
+//   //   width: 75px;
+// }
+
+.skill-name {
+  font-size: 0.7rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-projects {
+  background-clip: padding-box;
+  background-color: $red-2;
+  border: 2px solid $red-2;
+}
+
+.btn-download-cv {
+  background-clip: padding-box;
+  background-color: transparent;
+  border: 2px solid $red-2;
+  color: $red-2;
+}

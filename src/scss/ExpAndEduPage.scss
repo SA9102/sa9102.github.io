@@ -1,0 +1,12 @@
+@import "./variables";
+
+.e-e {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  color: $red-2;
+}

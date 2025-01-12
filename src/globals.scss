@@ -1,0 +1,144 @@
+@import "./scss/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: $accent-white-2;
+  text-align: left;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $accent-grey-2;
+  text-align: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: $accent-white-3);
+} */
+
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: $accent-white-3;
+}
+
+span {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  /* font-style: italic; */
+  font-weight: 400;
+}
+
+/* h1 {
+  font-size: 4.5rem;
+  color: $accent-white-1);
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2rem;
+} */
+
+.btn {
+  padding: 0.3rem 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.07s;
+}
+
+.btn-projects {
+  background-color: $accent-white-1;
+}
+
+.btn-projects,
+.btn-projects .icon {
+  color: $accent-grey-1;
+}
+
+.btn-cv {
+  background-color: $red-2;
+}
+
+.btn-cv,
+.btn-cv icon {
+  color: $accent-white-1;
+}
+
+.btn:hover {
+  filter: brightness(0.8);
+}
+
+.highlight {
+  color: rgb(223, 60, 60);
+  text-shadow: 0px 0px 5px rgba(223, 60, 60, 0.3);
+}
+
+.highlight-dark {
+  color: $red-2;
+  text-shadow: 0px 0px 5px rgba(223, 60, 60, 0.3);
+}
+
+.badge {
+  border: 2px solid $red-1;
+  color: $red-1;
+  width: min-content;
+  padding: 0.1rem 1rem;
+  border-radius: 5rem;
+  box-shadow: 0px 0px 20px -2px rgba(223, 60, 60, 0.3);
+}
+
+.badge:hover {
+  background-color: $red-1;
+  color: $accent-grey-1;
+}
