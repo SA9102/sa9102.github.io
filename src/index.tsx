@@ -13,7 +13,7 @@ import ProjectsPage from "./pages/ProjectsPage.tsx";
 import AboutMePage from "./pages/AboutMePage.tsx";
 
 // Utils
-import { BASE, HOME, ABOUT_ME, PROJECTS } from "./utils/routes.ts";
+import { HOME, ABOUT_ME, PROJECTS } from "./utils/routes.ts";
 
 // Global CSS
 import "./globals.scss";

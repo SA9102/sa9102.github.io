@@ -3,7 +3,6 @@ import removeForwardSlash from "../utils/removeForwardSlash";
 import getTitleFromRoute from "../utils/getUpperTextFromRoute";
 // CSS
 import "../scss/NavbarItem.scss";
-import { BASE } from "../utils/routes";
 
 type props = {
   route: string;
