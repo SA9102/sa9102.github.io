@@ -17,6 +17,10 @@ const icons = [
     alt: "TypeScript",
   },
   {
+    src: jestIcon,
+    alt: "Jest",
+  },
+  {
     src: nodeIcon,
     alt: "NodeJS",
   },
@@ -27,10 +31,6 @@ const icons = [
   {
     src: mysqlIcon,
     alt: "MySQL",
-  },
-  {
-    src: jestIcon,
-    alt: "Jest",
   },
 ];
 
@@ -43,7 +43,7 @@ const HomePage = () => {
       <p className={HomePageCSS["short-desc"]}>
         As an{" "}
         <span className="highlight-dark">aspiring full-stack developer</span>, I
-        love problem solving and bringing ideas to life through code.
+        love problem solving and bringing ideas to life through code!
       </p>
       <p className={HomePageCSS["short-desc"]}></p>
       {/* <p className={HomePageCSS["short-desc"]}>
@@ -67,12 +67,14 @@ const HomePage = () => {
         ))}
       </div>
       <div className={HomePageCSS["btn-group"]}>
-        <button className={`btn ${HomePageCSS["btn-projects"]}`}>
-          Projects
-        </button>
-        <button className={`btn ${HomePageCSS["btn-download-cv"]}`}>
-          Download CV
-        </button>
+        <a className={`btn ${HomePageCSS["btn-projects"]}`}>Projects</a>
+        <a
+          href="https://docs.google.com/document/d/1m3x0UkWp1RxyxTo8Fff2iK0Yn0g8Szut/edit?usp=sharing&ouid=116523381189634774449&rtpof=true&sd=true"
+          target="_blank"
+          className={`btn ${HomePageCSS["btn-view-cv"]}`}
+        >
+          View CV
+        </a>
       </div>
       {/* <h1 className="hero-name">
         Hello, I'm <span className="highlight">Shayan</span>.

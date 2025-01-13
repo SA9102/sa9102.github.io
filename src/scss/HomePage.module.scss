@@ -13,6 +13,10 @@
 h1 {
   text-align: center;
   margin-bottom: 1rem;
+
+  // @media only screen and (min-width: $laptop) {
+
+  // }
 }
 
 .skill-icons {
@@ -22,7 +26,11 @@ h1 {
   // background-color: red;
   gap: 1rem;
   flex-wrap: wrap;
+  margin: 1rem 0;
   // width: 50%;
+  @media only screen and (min-width: $laptop) {
+    gap: 1.5rem;
+  }
 }
 
 .skill-icon-and-name {
@@ -30,17 +38,25 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 0.2rem;
 }
 
 .skill-icon {
   width: 20px;
   filter: grayscale(1);
   transition: all 0.5s;
+
+  @media only screen and (min-width: $laptop) {
+    width: 30px;
+  }
 }
 
 .short-desc {
   font-size: 1rem;
   text-align: center;
+  @media only screen and (min-width: $laptop) {
+    font-size: 1.3rem;
+  }
 }
 
 // .skill-icon:hover {
@@ -50,6 +66,9 @@ h1 {
 
 .skill-name {
   font-size: 0.7rem;
+  @media only screen and (min-width: $laptop) {
+    font-size: 0.9rem;
+  }
 }
 
 .btn-group {
@@ -63,9 +82,10 @@ h1 {
   border: 2px solid $red-2;
 }
 
-.btn-download-cv {
+.btn-view-cv {
   background-clip: padding-box;
   background-color: transparent;
   border: 2px solid $red-2;
   color: $red-2;
+  text-decoration: none;
 }

@@ -7,35 +7,26 @@ const AboutMePage = () => {
         I'm an aspiring <span className="highlight">full-stack developer.</span>
       </h2>
       <p>
-        Driven by a love for algorithms and problem-solving through code, I
-        enjoy creating dynamic and intuitive web applications. I'm exploring
-        front-end and back-end technologies like React, Svelte and MongoDB,
-        while also honing and developing my skills through my own{" "}
+        Driven by a love for algorithms and problem-solving, I enjoy creating
+        dynamic and intuitive web applications. I'm exploring front-end and
+        back-end technologies like React, Svelte and MongoDB, while also honing
+        and developing my skills through my own{" "}
         <span className="highlight-dark">personal projects</span>.
       </p>
       <p>
-        Although I'm at the start of my career adventure, my dedication and
-        desire to{" "}
+        I may just be starting my career journey, but my dedication and
+        continuous desire to{" "}
         <span className="highlight-dark">learn, challenge myself and grow</span>{" "}
-        sets me apart from others.
+        set me apart from others.
       </p>
-      <p className={AboutMePageCSS["job-search-desc"]}>
+      <p
+        className={`${AboutMePageCSS["job-search-desc"]} ${AboutMePageCSS["looking-for-role"]}`}
+      >
         Currently looking for a 12-month placement or internship in software or
         web development. I'm excited to bring my enthusiasm and skills to
-        real-world challenges!
+        real-world problems, and be in an environment that challenges me to do
+        my best!
       </p>
-      <div className={AboutMePageCSS["btn-group"]}>
-        <button
-          className={`${AboutMePageCSS["btn"]} ${AboutMePageCSS["projects"]}`}
-        >
-          Projects
-        </button>
-        <button
-          className={`${AboutMePageCSS["btn"]} ${AboutMePageCSS["download-cv"]}`}
-        >
-          Download CV
-        </button>
-      </div>
     </>
   );
 };

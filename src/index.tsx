@@ -13,10 +13,19 @@ import ProjectsPage from "./pages/ProjectsPage.tsx";
 import AboutMePage from "./pages/AboutMePage.tsx";
 
 // Utils
-import { BASE, HOME, ABOUT_ME, PROJECTS } from "./utils/routes.ts";
+import {
+  HOME,
+  ABOUT_ME,
+  SKILLS_AND_EXP,
+  EDUCATION,
+  PROJECTS,
+} from "./utils/routes.ts";
 
 // Global CSS
 import "./globals.scss";
+import SkillsAndExpPage from "./pages/SkillsAndExpPage.tsx";
+import Error404Page from "./pages/Error404Page.tsx";
+import EducationPage from "./pages/EducationPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -27,11 +36,11 @@ createRoot(document.getElementById("root")!).render(
           <Routes>
             <Route path="/" element={<Navigate to={HOME} replace />} />
             <Route path={HOME} element={<Home />} />
-            {/* <Route path={${HOME element={<Home />} /> */}
             <Route path={ABOUT_ME} element={<AboutMePage />} />
-            {/* <Route path={`/${BASE}/${ABOUT_ME}`} element={<AboutMePage />} /> */}
+            <Route path={EDUCATION} element={<EducationPage />} />
+            <Route path={SKILLS_AND_EXP} element={<SkillsAndExpPage />} />
             <Route path={PROJECTS} element={<ProjectsPage />} />
-            {/* <Route path={`/${BASE}/${PROJECTS}`} element={<ProjectsPage />} /> */}
+            <Route path="*" element={<Error404Page />} />
           </Routes>
         </div>
       </main>

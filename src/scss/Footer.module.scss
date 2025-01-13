@@ -2,9 +2,32 @@
 
 .footer {
   background-color: $accent-grey-1;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (min-width: $laptop) {
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.7rem 1rem;
+  }
 }
 
 .footer p {
   font-size: 1rem;
+  @media only screen and (min-width: $laptop) {
+    font-size: 1.2rem;
+  }
+}
+
+.icon-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.3rem;
+  @media only screen and (min-width: $laptop) {
+    font-size: 1.5rem;
+  }
 }

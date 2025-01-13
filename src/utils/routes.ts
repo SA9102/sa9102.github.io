@@ -4,4 +4,5 @@ export const HOME = "home";
 export const ABOUT_ME = "about-me";
 export const CONTACT = "contact";
 export const PROJECTS = "projects";
-export const EXP_AND_EDU = "experience-and-education";
+export const SKILLS_AND_EXP = "skills-and-experience";
+export const EDUCATION = "education";
