@@ -25,12 +25,12 @@ createRoot(document.getElementById("root")!).render(
       <main>
         <div className="page">
           <Routes>
-            {/* <Route path={HOME} element={<Home />} /> */}
-            <Route path={`/${BASE}/${HOME}`} element={<Home />} />
-            {/* <Route path={ABOUT_ME} element={<AboutMePage />} /> */}
-            <Route path={`/${BASE}/${ABOUT_ME}`} element={<AboutMePage />} />
-            {/* <Route path={PROJECTS} element={<ProjectsPage />} /> */}
-            <Route path={`/${BASE}/${PROJECTS}`} element={<ProjectsPage />} />
+            <Route path={HOME} element={<Home />} />
+            {/* <Route path={${HOME element={<Home />} /> */}
+            <Route path={ABOUT_ME} element={<AboutMePage />} />
+            {/* <Route path={`/${BASE}/${ABOUT_ME}`} element={<AboutMePage />} /> */}
+            <Route path={PROJECTS} element={<ProjectsPage />} />
+            {/* <Route path={`/${BASE}/${PROJECTS}`} element={<ProjectsPage />} /> */}
           </Routes>
         </div>
       </main>
