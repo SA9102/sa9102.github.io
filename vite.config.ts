@@ -5,5 +5,5 @@ import { BASE, HOME } from "./src/utils/routes";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: `/${HOME}`,
+  base: "/",
 });

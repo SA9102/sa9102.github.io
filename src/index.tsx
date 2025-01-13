@@ -3,7 +3,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 // React Router
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router";
 
 // Pages
 import Home from "./pages/HomePage.tsx";
@@ -25,6 +25,7 @@ createRoot(document.getElementById("root")!).render(
       <main>
         <div className="page">
           <Routes>
+            <Route path="/" element={<Navigate to={HOME} replace />} />
             <Route path={HOME} element={<Home />} />
             {/* <Route path={${HOME element={<Home />} /> */}
             <Route path={ABOUT_ME} element={<AboutMePage />} />
