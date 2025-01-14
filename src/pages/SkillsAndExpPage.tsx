@@ -1,22 +1,30 @@
-// import "../styles/ExpAndEduPage.css";
+import SkillsAndExpPageCSS from "../scss/SkillsAndExpPage.module.scss";
+import {
+  projectsParagraphs,
+  superdrugParagraphs,
+} from "../content/skillsAndExperience";
 
 const SkillsAndExpPage = () => {
   return (
     <>
       <h2>Experience</h2>
-      <h3>Superdrug - Sales Assistant</h3>
+      <h3>Superdrug - Sales Assistant (part-time)</h3>
       <h4>March 2023 - Present</h4>
-      <p>
-        I work hard on the shop floor, keeping the store tidy and presentable
-        for customers.
-      </p>
-      <h2>Education</h2>
-      <h3>Queen Mary University of London</h3>
-      <h4>Computer Science - expected to get 1st Class</h4>
-      <h4>September 2023 - July 2027 (Expected)</h4>
-      <ul>
-        <li></li>
-      </ul>
+      {superdrugParagraphs.map((content) => (
+        <article>
+          <h5>{content.heading}</h5>
+          <p>{content.text}</p>
+        </article>
+      ))}
+      <br />
+      <h3>Personal Projects</h3>
+      <h4>January 2022 - Present</h4>
+      {projectsParagraphs.map((content) => (
+        <article>
+          <h5>{content.heading}</h5>
+          <p>{content.text}</p>
+        </article>
+      ))}
     </>
   );
 };

@@ -19,6 +19,7 @@ import {
   SKILLS_AND_EXP,
   EDUCATION,
   PROJECTS,
+  CONNECT,
 } from "./utils/routes.ts";
 
 // Global CSS
@@ -26,6 +27,7 @@ import "./globals.scss";
 import SkillsAndExpPage from "./pages/SkillsAndExpPage.tsx";
 import Error404Page from "./pages/Error404Page.tsx";
 import EducationPage from "./pages/EducationPage.tsx";
+import ConnectPage from "./pages/ConnectPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -40,6 +42,7 @@ createRoot(document.getElementById("root")!).render(
             <Route path={EDUCATION} element={<EducationPage />} />
             <Route path={SKILLS_AND_EXP} element={<SkillsAndExpPage />} />
             <Route path={PROJECTS} element={<ProjectsPage />} />
+            <Route path={CONNECT} element={<ConnectPage />} />
             <Route path="*" element={<Error404Page />} />
           </Routes>
         </div>

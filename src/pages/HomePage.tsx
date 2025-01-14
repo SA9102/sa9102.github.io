@@ -1,38 +1,5 @@
 import HomePageCSS from "../scss/HomePage.module.scss";
-
-import reactIcon from "../assets/react-icon.png";
-import tsIcon from "../assets/ts-icon.png";
-import nodeIcon from "../assets/node-icon.png";
-import mongoIcon from "../assets/mongo-icon.png";
-import mysqlIcon from "../assets/mysql-icon.png";
-import jestIcon from "../assets/jest-icon.png";
-
-const icons = [
-  {
-    src: reactIcon,
-    alt: "React",
-  },
-  {
-    src: tsIcon,
-    alt: "TypeScript",
-  },
-  {
-    src: jestIcon,
-    alt: "Jest",
-  },
-  {
-    src: nodeIcon,
-    alt: "NodeJS",
-  },
-  {
-    src: mongoIcon,
-    alt: "MongoDB",
-  },
-  {
-    src: mysqlIcon,
-    alt: "MySQL",
-  },
-];
+import icons from "../utils/iconsDisplay";
 
 const HomePage = () => {
   return (

@@ -41,12 +41,15 @@ main {
   flex-direction: column;
   gap: 1.5rem;
   @media only screen and (min-width: $laptop) {
-    margin: 2rem 15rem;
+    margin: 2rem 0;
+    align-self: center;
+    width: $page-width;
+    // margin: 2rem 15rem;
   }
 
-  @media only screen and (min-width: $desktop) {
-    margin: 2rem 25rem;
-  }
+  // @media only screen and (min-width: $desktop) {
+  //   margin: 2rem 25rem;
+  // }
 }
 
 /* p {
@@ -99,6 +102,10 @@ h4 {
   font-weight: 300;
   color: $accent-white-5;
   font-style: italic;
+}
+
+h5 {
+  font-size: 1.1rem;
 }
 
 /* h1 {
@@ -166,4 +173,25 @@ h3 {
 .badge:hover {
   background-color: $red-1;
   color: $accent-grey-1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $accent-grey-1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $red-2;
+  border-radius: 20rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $red-3;
 }

@@ -1,4 +1,5 @@
-import "../scss/Navbar.scss";
+import NavbarCSS from "../scss/Navbar.module.scss";
+import "../scss/BurgerMenu.scss";
 import NavbarItem from "./NavbarItem";
 import {
   HOME,
@@ -6,6 +7,7 @@ import {
   PROJECTS,
   SKILLS_AND_EXP,
   EDUCATION,
+  CONNECT,
 } from "../utils/routes";
 
 import Drawer from "react-modern-drawer";
@@ -24,21 +26,29 @@ const Navbar = () => {
 
   const navbarItems = (
     <>
-      {[HOME, ABOUT_ME, EDUCATION, SKILLS_AND_EXP, PROJECTS].map((route) => (
-        <NavbarItem key={route} route={route} onClose={toggleDrawer} />
-      ))}
+      {[HOME, ABOUT_ME, EDUCATION, SKILLS_AND_EXP, PROJECTS, CONNECT].map(
+        (route) => (
+          <NavbarItem key={route} route={route} onClose={toggleDrawer} />
+        )
+      )}
     </>
   );
 
   return (
-    <nav className="navbar-container">
-      <p className="navbar-name">Shayan Ali</p>
+    <nav className={NavbarCSS["navbar-container"]}>
       {isDesktopOrLaptop ? (
-        <ul className="navbar">{navbarItems}</ul>
+        <div className={NavbarCSS["name-and-items"]}>
+          <p className={NavbarCSS["navbar-name"]}>Shayan Ali</p>
+          <ul className={NavbarCSS["navbar"]}>{navbarItems}</ul>
+        </div>
       ) : (
         <>
-          <div className="drawer-and-button">
-            <i className="fa-solid fa-bars icon" onClick={toggleDrawer} />
+          <p className={NavbarCSS["navbar-name"]}>Shayan Ali</p>
+          <div className={NavbarCSS["drawer-and-button"]}>
+            <i
+              className={`fa-solid fa-bars ${NavbarCSS.icon}`}
+              onClick={toggleDrawer}
+            />
             <Drawer
               open={isOpen}
               onClose={toggleDrawer}

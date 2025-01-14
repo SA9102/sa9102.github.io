@@ -2,8 +2,7 @@ import { useLocation, useNavigate } from "react-router";
 import removeForwardSlash from "../utils/removeForwardSlash";
 import getTitleFromRoute from "../utils/getUpperTextFromRoute";
 // CSS
-import "../scss/NavbarItem.scss";
-import { BASE } from "../utils/routes";
+import NavbarItemCSS from "../scss/NavbarItem.module.scss";
 
 type props = {
   route: string;
@@ -16,7 +15,12 @@ const NavbarItem = ({ route, onClose }: props) => {
 
   return (
     <li
-      className={currentRoute === route ? "selected" : "not-selected"}
+      className={`${NavbarItemCSS["navbar-item"]} ${
+        currentRoute === route
+          ? NavbarItemCSS["selected"]
+          : NavbarItemCSS["not-selected"]
+      }`}
+      // className={NavbarItemCSS["navbar-item"] currentRoute === route ? "selected" : "not-selected"}
       onClick={() => {
         onClose();
         // navigate(`/${BASE}/${route}`);
