@@ -62,7 +62,6 @@ p {
   font-size: 1.1rem;
   font-weight: 300;
   color: $accent-white-3;
-
   @media only screen and (min-width: $laptop) {
     font-size: 1.3rem;
   }
@@ -106,6 +105,7 @@ h4 {
 
 h5 {
   font-size: 1.1rem;
+  color: $red-2;
 }
 
 /* h1 {

@@ -22,11 +22,19 @@ const AboutMePage = () => {
       <p
         className={`${AboutMePageCSS["job-search-desc"]} ${AboutMePageCSS["looking-for-role"]}`}
       >
-        Currently looking for a 12-month placement or internship in software or
-        web development. I'm excited to bring my enthusiasm and skills to
-        real-world problems, and be in an environment that challenges me to do
-        my best!
+        I'm currently seeking a 12-month placement/internship in software or web
+        development. I would love to bring my enthusiasm and skills to an
+        environment that values growth and innovation, and challenges me to do
+        my very best.
       </p>
+      <p>
+        Outside of university and work, I do sometimes enjoy a bit of gaming.
+      </p>
+      <h2>My core values.</h2>
+      Here are some of my core values which I feel are essential
+      <ul>
+        <li>Kindness</li>
+      </ul>
     </>
   );
 };
