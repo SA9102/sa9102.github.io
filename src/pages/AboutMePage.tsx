@@ -30,11 +30,6 @@ const AboutMePage = () => {
       <p>
         Outside of university and work, I do sometimes enjoy a bit of gaming.
       </p>
-      <h2>My core values.</h2>
-      Here are some of my core values which I feel are essential
-      <ul>
-        <li>Kindness</li>
-      </ul>
     </>
   );
 };
