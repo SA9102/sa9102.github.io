@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  background-color: $accent-grey-2;
+  background-color: $accent-grey-3;
   text-align: center;
 }
 
@@ -58,15 +58,26 @@ main {
   color: $accent-white-3);
 } */
 
-p {
+p,
+li {
   font-size: 1.1rem;
-  font-weight: 300;
   color: $accent-white-3;
   @media only screen and (min-width: $laptop) {
     font-size: 1.3rem;
   }
 }
 
+p {
+  font-weight: 300;
+}
+
+li {
+  font-weight: 400;
+}
+
+ul {
+  margin-left: 2rem;
+}
 span {
   font-size: inherit;
   font-weight: inherit;
@@ -123,10 +134,10 @@ h3 {
 
 .btn {
   padding: 0.3rem 1rem;
-  border-radius: 2rem;
+  border-radius: $border-radius-medium;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.07s;
+  transition: $transition;
 }
 
 .btn-projects {
@@ -135,7 +146,7 @@ h3 {
 
 .btn-projects,
 .btn-projects .icon {
-  color: $accent-grey-1;
+  color: $accent-grey-2;
 }
 
 .btn-cv {
@@ -172,7 +183,7 @@ h3 {
 
 .badge:hover {
   background-color: $red-1;
-  color: $accent-grey-1;
+  color: $accent-grey-2;
 }
 
 /* width */
@@ -182,7 +193,7 @@ h3 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: $accent-grey-1;
+  background: $accent-grey-2;
 }
 
 /* Handle */

@@ -4,7 +4,7 @@ const AboutMePage = () => {
   return (
     <>
       <h2>
-        I'm an aspiring <span className="highlight">full-stack developer.</span>
+        I enjoy <span className="highlight">web development.</span>
       </h2>
       <p>
         Driven by a love for algorithms and problem-solving, I enjoy creating

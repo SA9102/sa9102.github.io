@@ -10,7 +10,11 @@ const SkillsAndExpPage = () => {
       {superdrug.map((content) => (
         <article>
           <h5>{content.heading}</h5>
-          <p>{content.text}</p>
+          <div className={SkillsAndExpPageCSS.paragraphs}>
+            {content.text.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
+          </div>
         </article>
       ))}
       <br />

@@ -8,7 +8,7 @@ import {
   SKILLS_AND_EXP,
   EDUCATION,
   CONNECT,
-} from "../utils/routes";
+} from "../utils/mainEndpoints";
 
 import Drawer from "react-modern-drawer";
 

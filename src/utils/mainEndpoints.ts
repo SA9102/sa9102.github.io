@@ -1,4 +1,4 @@
-// All valid routes within the application
+// All valid main endpoints within the application
 export const BASE = "sa9102.github.io";
 export const HOME = "home";
 export const ABOUT_ME = "about-me";

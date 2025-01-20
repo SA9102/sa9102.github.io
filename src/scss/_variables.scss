@@ -1,8 +1,10 @@
 // Variables
-$accent-grey-1: #161616;
-$accent-grey-2: #1f1f1f;
-$accent-grey-3: #2c2c2c;
-$accent-grey-4: #313131;
+
+$accent-grey-1: #0f0f0f;
+$accent-grey-2: #161616;
+$accent-grey-3: #1f1f1f;
+$accent-grey-4: #2c2c2c;
+$accent-grey-5: #313131;
 
 $accent-white-1: #ebebeb;
 $accent-white-2: #dadada;
@@ -16,7 +18,13 @@ $red-3: rgba(223, 60, 60, 0.473);
 
 $teal: rgba(79, 214, 255, 0.74);
 
+$border-radius-small: 0.4rem;
+$border-radius-medium: 2rem;
+$border-radius-full: 20rem;
+
 $laptop: 992px;
 $desktop: 1500px;
 
 $page-width: 750px;
+
+$transition: all 0.08s;
