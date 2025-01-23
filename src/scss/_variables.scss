@@ -22,9 +22,11 @@ $border-radius-small: 0.4rem;
 $border-radius-medium: 2rem;
 $border-radius-full: 20rem;
 
-$laptop: 992px;
-$desktop: 1500px;
+$medium-screen: 750px;
 
-$page-width: 750px;
+$bigger-screen: 930px;
+
+$page-width-medium: 650px;
+$page-width-big: 750px;
 
 $transition: all 0.08s;

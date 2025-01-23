@@ -14,7 +14,7 @@ h1 {
   text-align: center;
   margin-bottom: 1rem;
 
-  // @media only screen and (min-width: $laptop) {
+  // @media only screen and (min-width: $bigger-screen) {
 
   // }
 }
@@ -28,7 +28,7 @@ h1 {
   flex-wrap: wrap;
   margin: 1rem 0;
   // width: 50%;
-  @media only screen and (min-width: $laptop) {
+  @media only screen and (min-width: $bigger-screen) {
     gap: 1.5rem;
   }
 }
@@ -46,7 +46,7 @@ h1 {
   filter: grayscale(1);
   transition: all 0.5s;
 
-  @media only screen and (min-width: $laptop) {
+  @media only screen and (min-width: $bigger-screen) {
     width: 30px;
   }
 }
@@ -54,7 +54,7 @@ h1 {
 .short-desc {
   font-size: 1rem;
   text-align: center;
-  @media only screen and (min-width: $laptop) {
+  @media only screen and (min-width: $bigger-screen) {
     font-size: 1.3rem;
   }
 }
@@ -66,7 +66,7 @@ h1 {
 
 .skill-name {
   font-size: 0.7rem;
-  @media only screen and (min-width: $laptop) {
+  @media only screen and (min-width: $bigger-screen) {
     font-size: 0.9rem;
   }
 }

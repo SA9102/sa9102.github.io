@@ -1,11 +1,28 @@
 import SkillsAndExpPageCSS from "../scss/SkillsAndExpPage.module.scss";
-import { projects, superdrug } from "../content/skillsAndExperience";
+import experiences from "../content/skillsAndExperience";
 
 const SkillsAndExpPage = () => {
   return (
     <>
       <h2>Experience</h2>
-      <h3>Superdrug - Sales Assistant (part-time)</h3>
+      {experiences.map((exp) => (
+        <div className="card">
+          <h3>{exp.work}</h3>
+          <h4>{exp.date}</h4>
+          <div className={SkillsAndExpPageCSS["paragraphs"]}>
+            {exp.content.map((cont) => (
+              <div className={`card ${SkillsAndExpPageCSS.paragraphs}`}>
+                <h5>{cont.heading}</h5>
+                {cont.text.map((paragraph) => (
+                  <p>{paragraph}</p>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      {/* <h3>Superdrug - Sales Assistant (part-time)</h3>
       <h4>March 2023 - Present</h4>
       {superdrug.map((content) => (
         <article>
@@ -25,7 +42,7 @@ const SkillsAndExpPage = () => {
           <h5>{content.heading}</h5>
           <p>{content.text}</p>
         </article>
-      ))}
+      ))} */}
     </>
   );
 };

@@ -11,7 +11,7 @@ const ProjectsPage = () => {
       <h2>Projects</h2>
       <div className={ProjectsPageCSS["all-projects"]}>
         {projects.map((content) => (
-          <article className={ProjectsPageCSS["project-card"]}>
+          <article className={`card ${ProjectsPageCSS["project-card"]}`}>
             <h3>{content.heading}</h3>
             <div className={ProjectsPageCSS["content-and-image"]}>
               <img src={content.image} className={ProjectsPageCSS.splash} />

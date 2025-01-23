@@ -22,7 +22,7 @@
   align-items: center;
   list-style-type: none;
 
-  @media only screen and (min-width: $laptop) {
+  @media only screen and (min-width: $bigger-screen) {
     justify-content: center;
   }
 
@@ -34,7 +34,7 @@
 .name-and-items {
   display: flex;
   justify-content: space-between;
-  width: $page-width;
+  width: $page-width-big;
   align-items: center;
 }
 
@@ -50,7 +50,7 @@
   font-size: 1.2rem;
 }
 
-@media only screen and (min-width: $laptop) {
+@media only screen and (min-width: $bigger-screen) {
   .navbar {
     // width: 100%;
     display: flex;
