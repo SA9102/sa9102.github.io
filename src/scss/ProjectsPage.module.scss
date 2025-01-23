@@ -12,6 +12,10 @@
 
   img {
     max-width: 300px;
+
+    @media only screen and (max-width: $bigger-screen) {
+      margin-bottom: 1rem;
+    }
   }
 
   button,

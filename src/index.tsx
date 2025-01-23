@@ -31,7 +31,7 @@ import ConnectPage from "./pages/ConnectPage.tsx";
 import { P_MTE, P_TODO, P_WEATHER } from "./utils/projectEndpoints.ts";
 import ProjectPage from "./pages/ProjectPage.tsx";
 
-import { todoProject, weatherProject } from "./content/project.ts";
+import { mteProject, todoProject, weatherProject } from "./content/project.ts";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -49,6 +49,10 @@ createRoot(document.getElementById("root")!).render(
             <Route
               path={`${PROJECTS}/${P_TODO}`}
               element={<ProjectPage project={todoProject} inDev={true} />}
+            />
+            <Route
+              path={`${PROJECTS}/${P_MTE}`}
+              element={<ProjectPage project={mteProject} inDev={false} />}
             />
             <Route
               path={`${PROJECTS}/${P_WEATHER}`}

@@ -1,12 +1,17 @@
+import { Link, NavLink, useNavigate } from "react-router";
 import HomePageCSS from "../scss/HomePage.module.scss";
 import icons from "../utils/iconsDisplay";
+import { PROJECTS } from "../utils/mainEndpoints";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <section className={HomePageCSS.homepage}>
       <h1>
         Hi! I'm <span className="highlight">Shayan</span>.
       </h1>
+
       <p className={HomePageCSS["short-desc"]}>
         As an{" "}
         <span className="highlight-dark">aspiring full-stack developer</span>, I
@@ -34,7 +39,12 @@ const HomePage = () => {
         ))}
       </div>
       <div className={HomePageCSS["btn-group"]}>
-        <a className={`btn ${HomePageCSS["btn-projects"]}`}>Projects</a>
+        <NavLink
+          to={`/${PROJECTS}`}
+          className={`btn ${HomePageCSS["btn-projects"]}`}
+        >
+          Projects
+        </NavLink>
         <a
           href="https://docs.google.com/document/d/1m3x0UkWp1RxyxTo8Fff2iK0Yn0g8Szut/edit?usp=sharing&ouid=116523381189634774449&rtpof=true&sd=true"
           target="_blank"

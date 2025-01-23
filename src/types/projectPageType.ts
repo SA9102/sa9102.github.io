@@ -5,6 +5,7 @@ type projectPageType = {
   about: string[];
   motivation: string[];
   features: string[];
+  future?: string[];
 };
 
 export default projectPageType;

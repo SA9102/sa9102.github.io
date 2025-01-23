@@ -16,20 +16,36 @@ const ProjectPage = ({ project, inDev }: props) => {
           <li>{tag}</li>
         ))}
       </ul>
-      <h3>About</h3>
-      {project.about.map((paragraph) => (
-        <p>{paragraph}</p>
-      ))}
-      <h3>Features {inDev && "(*planned)"}</h3>
-      <ul>
-        {project.features.map((paragraph) => (
-          <li>{paragraph}</li>
+      <div className="card">
+        <h3>About</h3>
+        {project.about.map((paragraph) => (
+          <p>{paragraph}</p>
         ))}
-      </ul>
-      <h3>Motivation</h3>
-      {project.motivation.map((paragraph) => (
-        <p>{paragraph}</p>
-      ))}
+      </div>
+      <div className="card">
+        <h3>Features {inDev && "(*planned)"}</h3>
+        <ul>
+          {project.features.map((paragraph) => (
+            <li>{paragraph}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="card">
+        <h3>Motivation</h3>
+        {project.motivation.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+      </div>
+      {project.future && (
+        <>
+          <div className="card">
+            <h3>Future</h3>
+            {project.future.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
+          </div>
+        </>
+      )}
     </>
   );
 };
