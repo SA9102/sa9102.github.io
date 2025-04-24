@@ -1,4 +1,5 @@
 import todoSplash from "../assets/splash/todo-splash.png";
+import advancedTodoSplash from "../assets/splash/advanced-todo-splash.png";
 import mteSplash from "../assets/splash/mte-splash.png";
 import weatherSplash from "../assets/splash/weather-splash.png";
 import { PROJECTS } from "../utils/mainEndpoints";
@@ -20,30 +21,33 @@ type projectsType = {
 
 const projects: projectsType[] = [
   {
-    heading: "Todo App (in development)",
-    image: todoSplash,
+    heading: "Advanced Todo (in development)",
+    image: advancedTodoSplash,
     moreInfo: P_TODO,
     links: [
       {
         value: "Live Demo on GitHub Pages",
-        link: "https://sa9102.github.io/Todo-App/",
+        link: "https://sa9102.github.io/Advanced-Todo/",
       },
       {
         value: "Live Demo + Code on StackBlitz",
-        link: "https://stackblitz.com/~/github.com/SA9102/Todo-App?file=README.md",
+        link: "https://stackblitz.com/~/github.com/SA9102/Advanced-Todo?file=README.md",
       },
       {
         value: "GitHub Repository",
-        link: "https://github.com/SA9102/Todo-App",
+        link: "https://github.com/SA9102/Advanced-Todo",
       },
     ],
     paragraphs: [
-      `My attempt to turn a simple todo application into a powerful tool for
-          productivity.`,
+      `A todo application designed for speed and productivity.`,
       `High focus on using best practices to write clean and maintainable
           code.`,
     ],
-    features: ["Create, view, edit and delete tasks", "Filter tasks"],
+    features: [
+      "Create, view, edit and delete todos",
+      "Filter todos",
+      "Todos have description, start/end datetimes, priority and tags",
+    ],
   },
   {
     heading: "Markdown Text Editor",

@@ -1,7 +1,7 @@
 import projectPageType from "../types/projectPageType";
 
 export const todoProject: projectPageType = {
-  name: "Todo App (in development)",
+  name: "Advanced Todo (in development)",
   images: [],
   techStack: [
     "React",
@@ -9,49 +9,29 @@ export const todoProject: projectPageType = {
     "Vite",
     "Zustand",
     "React Router",
-    "Node",
-    "MongoDB",
-    "Vitest (Jest)",
-    "React Testing Library",
-    "MUI",
+    "Mantine",
   ],
   about: [
     "My attempt to create an efficient productivity tool beyond just the simple todo app. Was initially meant to be a todo application, but now I want to extend it into something much more.",
     "Still in the early stages of development, and slow progress due to university coursework.",
   ],
   features: [
-    "Create, edit, and delete tasks",
-    "Optionally add a description and priority to each task",
-    "Filter tasks by text within name/description",
+    "Create, edit, and delete todo tasks",
+    "Optionally add a description, priority, tags, start and end datetimes to each todo",
+    "Filter tasks by text, tags, priority and start/end datetimes",
     "*Create an account to permanently save tasks",
     "*Download tasks in a certain format like JSON (undecided yet)",
     "*Undo task deletions",
     "*Recurring tasks on a daily/weekly/monthly basis",
-    "*Eventually have it as a Progressive Web App (PWA)",
-    // "*Sync tasks across multiple devices",
+    "*Have it as a Progressive Web App (PWA)",
     "*Reminder notifications",
-    "*Add quick notes unrelated to tasks",
-    "*Possibly integrate a file editor within the application (to make it an all-in-one productivity tool)",
-    "*Possibly be able to use it in a 'group' environment where you can share it with others and work on it in real time",
-    "(And much more - see requirements.md in repository page)",
   ],
   motivation: [
-    `This project will be my most complex and ambitious one to date for several reasons.
-    Unlike with previous projects, with this project I want to challenge myself and see
-    how far I can go and take a basic application (i.e. a simple todo app) and turn it
-    into something really special. Moreover, it is my first project (and I will do this
-    in future projects) where I take seriously the maintainability of my codebase, and
-    the reusability of components. I am doing this through implementing best practices,
-    such as global state (where appropriate) to avoid prop drilling, separating the logic
-    from the UI (either putting the logic in a utility function or in a custom hook), and
-    having a good folder structure. It is also my first React application where I am
-    writing unit and integration tests for my components.`,
-    `Some of my previous projects have messy and hard-to-maintain code, but I
-    realise that even for small applications, this is not good as it will be
-    hard to scale up the application. In professional development
-    environments, codebases are expected to be clean and maintainable, and
-    so I realise that being able to not just write code, but write clean
-    code, is an important skill.`,
+    `I'm looking to see how far I can go and turn a simple todo application into a useful productivity tool.
+    I'm also ensuring, to the best of my ability, that the code is well-commented, maintainable and follows best practices.
+    Some methods I use include using global state (where appropriate) to avoid prop drilling, and having a
+    good folder structure. 
+    `,
   ],
 };
 
