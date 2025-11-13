@@ -16,6 +16,11 @@ const AboutMePage = () => {
         </p>
         <br />
         <p>
+          Even though my current skillset lies within software development, I am
+          open to learning new technologies.
+        </p>
+        <br />
+        <p>
           I may just be starting my career journey, but my dedication and
           continuous desire to{" "}
           <span className="highlight-dark">
@@ -27,10 +32,11 @@ const AboutMePage = () => {
       <p
         className={`${AboutMePageCSS["job-search-desc"]} ${AboutMePageCSS["looking-for-role"]}`}
       >
-        I'm currently seeking a graduate job in software development, full-stack
-        development, or data science/analysis. I would love to bring my
-        enthusiasm and skills to an environment that values growth and
-        innovation, and challenges me to do my very best.
+        I'm currently seeking a graduate job in a tech role like software
+        development, full-stack development, cloud engineering or data
+        science/analysis. I would love to bring my enthusiasm and skills to an
+        environment that values growth and innovation, and challenges me to do
+        my very best.
       </p>
     </>
   );
