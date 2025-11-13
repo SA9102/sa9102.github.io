@@ -15,7 +15,7 @@ const ConnectPage = () => {
         >
           <i className={`fa-brands fa-linkedin ${ConnectPageCSS.icon}`}></i>
         </a>
-        <a href="mailto:shayan677@gmail.com" title="email">
+        <a href="mailto:shayan.ziyad.ali@gmail.com" title="email">
           <i className={`fa-solid fa-envelope ${ConnectPageCSS.icon}`}></i>
         </a>
       </div>

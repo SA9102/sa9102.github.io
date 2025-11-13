@@ -9,13 +9,13 @@ const HomePage = () => {
   return (
     <section className={HomePageCSS.homepage}>
       <h1>
-        Hi! I'm <span className="highlight">Shayan</span>.
+        👋 Hi! I'm <span className="highlight">Shayan</span>.
       </h1>
 
       <p className={HomePageCSS["short-desc"]}>
-        As an{" "}
-        <span className="highlight-dark">aspiring full-stack developer</span>, I
-        love problem solving and bringing ideas to life through code!
+        I'm an{" "}
+        <span className="highlight-dark">aspiring full-stack developer</span>{" "}
+        who loves problem solving and bringing ideas to life through code!
       </p>
       <p className={HomePageCSS["short-desc"]}></p>
       {/* <p className={HomePageCSS["short-desc"]}>
@@ -23,8 +23,8 @@ const HomePage = () => {
         University of London.
       </p> */}
       <p className={HomePageCSS["short-desc"]}>
-        I'm in my second year at Queen Mary University of London, completing my
-        bachelor's in Computer Science.
+        Currently a Computer Science undergraduate at Queen Mary University of
+        London.
       </p>
       <div className={HomePageCSS["skill-icons"]}>
         {icons.map((iconData) => (

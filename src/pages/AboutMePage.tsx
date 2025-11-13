@@ -4,7 +4,7 @@ const AboutMePage = () => {
   return (
     <>
       <h2>
-        I enjoy <span className="highlight">web development.</span>
+        I enjoy <span className="highlight">full-stack web development</span>.
       </h2>
       <div className="card">
         <p>
@@ -14,6 +14,7 @@ const AboutMePage = () => {
           honing and developing my skills through my own{" "}
           <span className="highlight-dark">personal projects</span>.
         </p>
+        <br />
         <p>
           I may just be starting my career journey, but my dedication and
           continuous desire to{" "}
@@ -26,10 +27,10 @@ const AboutMePage = () => {
       <p
         className={`${AboutMePageCSS["job-search-desc"]} ${AboutMePageCSS["looking-for-role"]}`}
       >
-        I'm currently seeking a placement or internship in software or web
-        development. I would love to bring my enthusiasm and skills to an
-        environment that values growth and innovation, and challenges me to do
-        my very best.
+        I'm currently seeking a graduate job in software development, full-stack
+        development, or data science/analysis. I would love to bring my
+        enthusiasm and skills to an environment that values growth and
+        innovation, and challenges me to do my very best.
       </p>
     </>
   );

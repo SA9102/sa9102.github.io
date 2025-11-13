@@ -40,10 +40,6 @@ const icons: iconsType[] = [
     alt: "Material UI",
   },
   {
-    src: jestIcon,
-    alt: "Jest",
-  },
-  {
     src: nodeIcon,
     alt: "NodeJS",
   },

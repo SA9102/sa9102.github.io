@@ -21,6 +21,7 @@ const experiences: experienceType[] = [
     such as assisting customers who require additional help, and addressing incidents like spillages and shoplifting. This proactive approach
     ensures that team members have an awareness of situations in the store, and thus take appropriate action. This helps us to better manage the store as a team.`,
           ``,
+          `On the shop floor, `,
           `But communication is not limited to work - I enjoy building
     relationships with them through informal conversations and work
     socials, which has boosted my self-esteem and has given me more confidence to work in a team, making us even stronger as a team.`,
