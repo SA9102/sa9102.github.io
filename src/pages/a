@@ -1,0 +1,48 @@
+
+
+const TECH_ICONS = [
+    {
+      icon: HTMLIcon,
+      name: "HTML",
+    },
+    {
+      icon: CSSIcon,
+      name: "CSS",
+    },
+    {
+      icon: JSIcon,
+      name: "JavaScript",
+    },
+    {
+      icon: TSIcon,
+      name: "TypeScript",
+    },
+    {
+      icon: ReactIcon,
+      name: "React",
+    },
+    {
+      icon: NodeIcon,
+      name: "Node",
+    },
+    {
+      icon: ExpressIcon,
+      name: "Express",
+    },
+    {
+      icon: MongoIcon,
+      name: "MongoDB",
+    },
+    {
+      icon: PythonIcon,
+      name: "Python",
+    },
+    {
+      icon: JavaIcon,
+      name: "Java",
+    },
+    {
+      icon: GitIcon,
+      name: "Git",
+    },
+  ];

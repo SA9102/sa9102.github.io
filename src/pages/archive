@@ -1,0 +1,48 @@
+import { Typography } from "@mui/material";
+
+const About = () => {
+  return (
+    <>
+      <Typography variant="h1" fontWeight="bold">
+        A little bit about me...
+      </Typography>
+      <Typography variant="body2">
+        From a young age, I've been fascinated by how easy it is to learn
+        coding, and build a vast array of things that can positively impact
+        lives. Thus, I got hooked into coding and have never looked back since.
+        I got hooked into coding at a young age, and have never looked back
+        since. I have always had this sense of satisfaction and achievement that
+        cannot be attained from anywhere else.
+      </Typography>
+      
+      <Typography variant="body2">
+        I've spent the last three years getting my feet wet in the world of web
+        development. I've been doing guided courses and building my own personal
+        projects to sharpen my skills and explore new technologies. It's been an
+        exciting and rewarding journey so far, and even today the learning never
+        stops!
+      </Typography>
+      <Typography variant="body2">
+        Solving a challenging problem has always given me a certain kind of
+        satisfaction and joy that cannot be attained anywhere else.
+      </Typography>
+      <Typography variant="body2">
+        Currently, I'm a Computer Science undergradute at Queen Mary University
+        of London, seeking a graduate role in tech, preferably in full-stack or
+        software development.
+      </Typography>
+      <Typography variant="body2">
+        For the past two years up until now, I've been working part-time as a
+        sales assistant at Superdrug, which has significantly helped boost my
+        confidence and communication skills, especially within fast-paced,
+        team-driven environments.
+      </Typography>
+      <Typography variant="body2">
+        Outside of coding, I enjoy reading novels, regular gym training, and
+        playing some video games to unwind after a busy week of work.
+      </Typography>
+    </>
+  );
+};
+
+export default About;
