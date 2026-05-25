@@ -1,12 +1,4 @@
-import {
-  Button,
-  Card,
-  ImageList,
-  ImageListItem,
-  ListSubheader,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
 
 import StackIcon from "tech-stack-icons";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";

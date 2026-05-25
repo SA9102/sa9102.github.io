@@ -37,22 +37,22 @@ const Projects = () => {
         server to start.
       </Typography>
       <Stack direction="row" gap={0.5} flexWrap="wrap">
-        <Card elevation={0} style={skillStyle}>
+        <Card elevation={0} sx={skillStyle}>
           TypeScript
         </Card>
-        <Card elevation={0} style={skillStyle}>
+        <Card elevation={0} sx={skillStyle}>
           React
         </Card>
-        <Card elevation={0} style={skillStyle}>
+        <Card elevation={0} sx={skillStyle}>
           Node
         </Card>
-        <Card elevation={0} style={skillStyle}>
+        <Card elevation={0} sx={skillStyle}>
           Express
         </Card>
-        <Card elevation={0} style={skillStyle}>
+        <Card elevation={0} sx={skillStyle}>
           MongoDB
         </Card>
-        <Card elevation={0} style={skillStyle}>
+        <Card elevation={0} sx={skillStyle}>
           MUI
         </Card>
       </Stack>
@@ -84,13 +84,13 @@ const Projects = () => {
         the world. Uses OpenWeatherMap API.
       </Typography>
       <Stack direction="row" gap={0.5} flexWrap="wrap">
-        <Card elevation={0} style={skillStyle}>
+        <Card elevation={0} sx={skillStyle}>
           JavaScript
         </Card>
-        <Card elevation={0} style={skillStyle}>
+        <Card elevation={0} sx={skillStyle}>
           React
         </Card>
-        <Card elevation={0} style={skillStyle}>
+        <Card elevation={0} sx={skillStyle}>
           Chakra UI
         </Card>
       </Stack>
