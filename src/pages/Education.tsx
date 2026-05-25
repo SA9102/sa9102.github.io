@@ -29,6 +29,9 @@ const Education = () => {
           <Typography>Algorithms and Data Structures</Typography>
         </li>
         <li>
+          <Typography>Security</Typography>
+        </li>
+        <li>
           <Typography>Data Mining</Typography>
         </li>
       </ul>
