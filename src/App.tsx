@@ -11,27 +11,31 @@ export function App() {
   const highlight = "font-bold text-red-400"
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center gap-10 p-6 text-center">
-      <p className="text-6xl font-bold tracking-tight">
+    // <div className="flex h-screen flex-col items-center justify-center gap-10 text-center">
+    <div className="">
+      {/* text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight */}
+      <h1 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
         Hi. I'm <span className="font-bold text-red-600">Shayan</span>.
-      </p>
+      </h1>
       {/* <br /> */}
 
       <div className="flex flex-col gap-7 lg:w-150 xl:w-200">
-        <p className="text-2xl">
+        <p className="text-xl">
+          {/* <p className="text-2xl"> */}
           Graduate in <span className={highlight}>Computer Science</span> and
           aspiring full-stack developer, focused on building reliable and
           maintainable software.
         </p>
-        <p className="text-lg text-zinc-300">
-          Continuously improving through hands-on projects with an emphasis on{" "}
+        {/* <p> */}
+        {/* <p className="text-lg text-zinc-300"> */}
+        {/* Continuously improving through hands-on projects with an emphasis on{" "}
           <span className={highlight}>security</span>,{" "}
           <span className={highlight}>testing</span> and{" "}
           <span className={highlight}>clean architecture</span>.
-        </p>
+        </p> */}
       </div>
 
-      <div className="flex gap-3">
+      {/* <div className="flex gap-3">
         <Badge variant="secondary" className={badgeStyles}>
           <FaReact size={iconSize} />
           React
@@ -61,7 +65,7 @@ export function App() {
         <Button size="lg" variant="secondary">
           View CV
         </Button>
-      </div>
+      </div> */}
     </div>
   )
 }
