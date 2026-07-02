@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { FaJava, FaPython, FaReact } from "react-icons/fa"
-import { BsTypescript } from "react-icons/bs"
-import { DiPostgresql } from "react-icons/di"
-import { RiNextjsFill } from "react-icons/ri"
+// import { Button } from "@/components/ui/button"
+// import { Badge } from "@/components/ui/badge"
+// import { FaJava, FaPython, FaReact } from "react-icons/fa"
+// import { BsTypescript } from "react-icons/bs"
+// import { DiPostgresql } from "react-icons/di"
+// import { RiNextjsFill } from "react-icons/ri"
 
 export function App() {
-  const badgeStyles = "text-xs p-3 flex gap-2"
-  const iconSize = 15
+  // const badgeStyles = "text-xs p-3 flex gap-2"
+  // const iconSize = 15
   const highlight = "font-bold text-red-400"
 
   return (
