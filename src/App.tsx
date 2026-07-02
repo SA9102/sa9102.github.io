@@ -12,7 +12,7 @@ export function App() {
 
   return (
     // <div className="flex h-screen flex-col items-center justify-center gap-10 text-center">
-    <div className="">
+    <div className="p-5">
       {/* text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight */}
       <h1 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
         Hi. I'm <span className="font-bold text-red-600">Shayan</span>.
